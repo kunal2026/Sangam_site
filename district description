@@ -1,2 +1,11 @@
-{name: districtname,
-description:____}
+{name: Agra district
+ description:
+   founded:
+      Sultan Sikandar Lodī, the Muslim ruler of the Delhi Sultanate, founded Agra in the year 1504. After the Sultan's death, the city passed on to his son, Sultan Ibrāhīm Lodī.
+   about:
+     the district lies in the cultural region of Braj. Agra district is bounded by Mathura District on the north, Dholpur District of Rajasthan state on the south, Firozabad District on the east and Bharatpur District of Rajasthan State on the west. The area of the district is 4,027 km² And the population is 2368000 (The current metro area population of Agra)
+   monuments:
+      Taj mahal,Agra fort,I'timād-ud-Daulah's tomb,Akbar's Tomb, Sikandra
+   culture:
+     Taj Mahotsav is a cultural festival and craft fair that was started in the year 1992 and has grown since then
+}
