@@ -1,0 +1,148 @@
+* {
+  background: black;
+  box-sizing: border-box;
+}
+
+div {
+  display: inline-block;
+}
+
+h1 {
+  text-decoration: green wavy underline;
+  color: aqua;
+}
+
+.svg-container svg {
+  margin-left: 25%;
+  height: 80%;
+  width: auto;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  .svg-container svg {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+.territory {
+  fill: blue;
+  cursor: pointer;
+}
+
+.svg-container {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.info-box {
+  /* margin-left: 10px; */
+  color: #ccc;
+  position: absolute;
+}
+
+.circle {
+  background-color: #fff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, .2);
+  border: 8px solid #ccc;
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: bold;
+  color: #000;
+  position: relative;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  padding: 20px 15px 15px 15px;
+  margin: 20px auto;
+}
+.circle-icon {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: -22px;
+  top: -20px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+.circle-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.yellow {
+  border-color: #f6a71d;
+}
+.brown{
+  border-color: rgb(227, 85, 85);
+}
+.red{
+  border-color: red;
+}
+.pink{
+  border-color: rgb(230, 41, 186);
+}
+.purple{
+  border-color: purple;
+}
+.green{
+  border-color: green;
+}
+#content1 {
+  color: orange;
+  float: right;
+}
+path:hover {
+  fill: orange;
+  cursor: pointer;
+}
+
+.svg-container {
+  width: 100%;
+  /* height: auto; */
+}
+
+path:hover::before {
+  content: attr(title);
+  position: absolute;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 999;
+  top: 0;
+  left: 100%;
+  transform: translateX(10px);
+}
+
+.tooltip {
+  position: absolute;
+  padding: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .svg-container svg {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .svg-container svg {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 992px) {
+  .svg-container svg {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
