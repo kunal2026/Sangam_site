@@ -8,7 +8,17 @@
       Taj mahal,Agra fort,I'timād-ud-Daulah's tomb,Akbar's Tomb, Sikandra
    culture:
      Taj Mahotsav is a cultural festival and craft fair that was started in the year 1992 and has grown since then
+
+name: Mathura
+description: Mathura, formerly Muttra, city, western Uttar Pradesh state, northern India. It lies in the Ganges-Yamuna Doab, on the Yamuna River about 25 miles (40 km) northwest of Agra. Mathura is one of the seven sacred cities of the Hindus. It is the traditional birthplace of the god Krishna (Krishna Janmabhoomi) and the primary site of pilgrimage for the annual celebration of Janmashtami.According to the 2011 census Mathura district has a population of 2,547,184,[1] roughly equal to the nation of Kuwait[14] or the US state of Nevada.
+
+name:Firozabad
+description:The city lies in the cultural region of Braj and was a part of the Surasena Mahajanapada during the Vedic Age. The city have some popular Hindu temples mainly Vaishno Devi Dham, Kela Devi Temple, Gopal Ashram (Hanuman Temple).According to the 2011 census Firozabad district has a population of 2,498,156,[2] roughly equal to the nation of Kuwait[6] or the US state of Nevada
+
+name:mainpuri
+description:Mainpuri district is one of the districts in the Agra division of Uttar Pradesh, India. Mainpuri town is the district headquarters. According to the 2011 census Mainpuri district has a population of 1,868,529,[1] roughly equal to the nation of Kosovo[8] or the US state of West Virginia
 }
+
 {
 name: Auraiya
 description: On 17th September,1997 two tehsils named Auraiya and Bidhuna were seperated from district Etawah to form the new district named as Auraiya. It is situated on National Highway no. 2 (Mughal Sarai Road) and 64 km. in the east of district headquarter of Etawah and 105 km. in west of Kanpur city. Auraiya having 7 Blocks named Ajitmal, Bhagyanagar, Sahar, Bidhuna, Achchalda, Erwakatra and Auraiya. This is the heroic place of Sengar Rajputs.
@@ -25,3 +35,4 @@ description:Amethi is a town located in the state of Uttar Pradesh, India. Nestl
 name:Amroha
 description:Amroha is a city located in the state of Uttar Pradesh, India. Known for its rich historical and cultural heritage, Amroha has a significant place in the region. The city is famous for its skilled craftsmanship in woodwork, particularly the intricate carving of rosewood and sandalwood. It also boasts several historical landmarks, including mosques, tombs, and forts that reflect the architectural brilliance of the bygone eras. Amroha is also renowned for its traditional handicrafts, such as pottery, brassware, and embroidery, which showcase the artistic skills of its people. With its vibrant markets, delectable cuisine, and warm hospitality, Amroha offers a unique blend of tradition and charm.
 }
+
