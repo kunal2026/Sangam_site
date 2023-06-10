@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: powderblue;
+}
+#city1,#city2,#city3,#city4,#city5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+/* Book */
+.book{  /* to be changed for different screens with media queries */
+    position: relative;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 500px;
+    transition: transform 0.5s ease-in;
+}
+.paper{
+    position: absolute; /* used absolute so that pages overlap each other */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+.front,.back{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s ease-in;
+}
+/* used z-index so that the front page comes over the back page */
+.front{
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid powderblue;
+}
+
+.back{
+    z-index: 0;
+}
+.front-content,.back-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-content{
+    transform: rotateY(180deg);
+}
+
+/* Paper flip effect */
+.flipped .front, .flipped .back{
+    transform: rotateY(-180deg);
+}
+
+/* Buttons */
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s ease-in;
+}
+button:focus{
+    outline: none;
+}
+button:hover{
+    color:#636363;
+}
+i{
+    font-size: 50px;
+    color: gray;
+}
+/* Paper stack order */
+#p1,#p4,#p7,#p10,#p13{
+    z-index:3 ;
+}
+#p2,#p5,#p8,#p11,#p14{
+    z-index: 2;
+}
+#p3,#p6,#p9,#p12,#p15{
+    z-index: 1;
+}
+
+
