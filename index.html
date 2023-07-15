@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Sangam Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Source sans pro font import  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          },
+          fontFamily:{
+            'sanspro':['Source Sans Pro','system-ui']
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+    <!--------- Navbar --------->
+    <nav class="">
+
+        <!-- large screen nav -->
+        <div class="flex flex-row items-center p-5 justify-around bg-orange-50">
+
+            <!-- sangam image   -->
+            <div>
+                <a href="./index.html" class="flex ">
+                    <img src="./assets/images/sangamlogo-nobg.png" alt="" class="h-20 w-20">
+                </a>
+            </div>
+
+            <!-- rest links -->
+            <div class="flex flex-row space-x-20 font-sanspro font-medium text-xl">
+
+                <!-- events -->
+                <div class="hover:text-orange-600 hover:underline underline-offset-8 transition-all duration-300 p-2">
+                     <a href="/pages/events.html" class="">Events</a>
+                </div>
+
+                <!-- explore up -->
+                <div class="hover:text-orange-600 hover:underline underline-offset-8 transition-all duration-300 p-2">
+                      <a href="/pages/explore_up.html">Explore</a>
+                </div>
+                 
+                <!-- about us  -->
+                <div class="hover:text-orange-600 hover:underline underline-offset-8 transition-all duration-300 p-2">
+                      <a href="/pages/about_us.html">About Us</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- small screen nav button -->
+        <div>
+
+        </div>
+
+        <!-- small screen nav -->
+        <div>
+
+        </div>
+
+    </nav>
+
+    <main>
+
+    </main>
+
+    <!--------Footer---------->
+    <footer>
+
+    </footer>
+
+
+    
+    <script src="./script.js"></script>
+  </body>
+</html>

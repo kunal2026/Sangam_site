@@ -1,0 +1,244 @@
+/* * {
+  background: black;
+  box-sizing: border-box;
+} */
+body{
+  overflow-x: hidden;
+}
+div {
+  display: inline-block;
+}
+.hlp{
+  padding: 2%;
+}
+
+#hedi{
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: orange underline;
+  color: yellowgreen;
+}
+p{
+  color: white;
+}
+.svg-container {
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+.svg-container svg {
+  margin-left: 25%;
+  /* height: 80%; */
+  margin-right: 5%;
+  width: auto;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  .svg-container svg {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+.path{
+  margin-bottom: 100px;
+}
+.territory {
+  fill: #dbab42;
+  cursor: pointer;
+}
+
+.info-box {
+  /* margin-left: 10px; */
+  color: #ccc;
+  position: absolute;
+  padding-right: 3%;
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
+}
+path:hover {
+  fill: #5A4108;
+  cursor: pointer;
+}
+
+.svg-container {
+  width: 100%;
+  /* height: auto; */
+}
+
+path:hover::before {
+  content: attr(title);
+  position: absolute;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 999;
+  top: 0;
+  left: 100%;
+  transform: translateX(10px);
+}
+
+.tooltip {
+  position: absolute;
+  padding: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .svg-container svg {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .svg-container svg {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 992px) {
+  .svg-container svg {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+/* flip */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #4a171e;
+}
+/* Book */
+.book{  /* to be changed for different screens with media queries */
+    position: relative;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 500px;
+    transition: transform 0.5s ease-in;
+}
+.paper{
+    position: absolute; /* used absolute so that pages overlap each other */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+.front,.back{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s ease-in;
+}
+/* used z-index so that the front page comes over the back page */
+.front{
+    /* border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%; */
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 7px solid #845632;
+    
+}
+
+.back{
+    /* border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%; */
+    z-index: 0;
+}
+.front-content,.back-content{
+    background-color: #f6ca9b;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.desc{
+  margin: 5%;
+  padding: 15%;
+  border-color: #4a171e;
+  border-style: solid;
+  border-width: 2px;
+}
+.desc h1{
+  font-size:medium;
+}
+.front-content h1{
+    display: block;
+}
+@font-face {
+  font-family: 'Samarkan';
+  src: url('SAMAN__.ttf') format('truetype'),
+}
+#city1,#city2,#city3,#city4,#city5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Samarkan';
+}
+.back-content{
+    transform: rotateY(180deg);
+}
+
+.front-content img,.back-content img{
+    display: block;
+    width: 80%;
+}
+
+/* Paper flip effect */
+.flipped .front, .flipped .back{
+    transform: rotateY(-180deg);
+}
+
+/* Buttons */
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s ease-in;
+}
+button:focus{
+    outline: none;
+}
+button:hover{
+    color:#636363;
+}
+i{
+    font-size: 50px;
+    color: gray;
+}
+/* Paper stack order */
+#p1,#p4,#p7,#p10,#p13{
+    z-index:3 ;
+}
+#p2,#p5,#p8,#p11,#p14{
+    z-index: 2;
+}
+#p3,#p6,#p9,#p12,#p15{
+    z-index: 1;
+}
+@media(max-width:800px){
+  .book{  /* to be changed for different screens with media queries */
+    position: relative;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 400px;
+    transition: transform 0.5s ease-in;
+  }
+}
